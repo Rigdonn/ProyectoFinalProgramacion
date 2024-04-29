@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "aCiGCw9CJX5I7bkpvksOmst4iwPhBWoq+qWWhTWnXVcGdsbUWchmUoAoiZncpVCtyyh0XBX/8beicHbvCAg2mw==",
+  "success": true,
+  "projectFilePath": "D:\\Godot\\Juego1\\Juego1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Calvo\\.nuget\\packages\\godot.sourcegenerators\\4.2.1\\godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "C:\\Users\\Calvo\\.nuget\\packages\\godotsharp\\4.2.1\\godotsharp.4.2.1.nupkg.sha512",
+    "C:\\Users\\Calvo\\.nuget\\packages\\godotsharpeditor\\4.2.1\\godotsharpeditor.4.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

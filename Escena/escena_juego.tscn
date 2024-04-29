@@ -1,0 +1,91 @@
+[gd_scene load_steps=13 format=3 uid="uid://8o4344v48a4"]
+
+[ext_resource type="Script" path="res://Objetos/Player.cs" id="1_bepe4"]
+[ext_resource type="Script" path="res://Escena/escena_juego.cs" id="1_vrxht"]
+[ext_resource type="Texture2D" uid="uid://y66t8jfbouu6" path="res://Images/adventurer_stand.png" id="2_tpw4u"]
+[ext_resource type="Texture2D" uid="uid://c2rfi1yg6eeuu" path="res://Images/adventurer_walk1.png" id="3_4f312"]
+[ext_resource type="Texture2D" uid="uid://dhyibjkx65txj" path="res://Images/adventurer_walk2.png" id="4_b6drg"]
+[ext_resource type="PackedScene" uid="uid://cqprtihpsa7kw" path="res://Objetos/enemy.tscn" id="6_6buaf"]
+[ext_resource type="PackedScene" uid="uid://c2trlku0ebcjk" path="res://Objetos/apple.tscn" id="10_v5hrf"]
+[ext_resource type="PackedScene" uid="uid://dcbqkxp284oi4" path="res://Escena/interfaz.tscn" id="12_c0bia"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q1olg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tpw4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4f312")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b6drg")
+}],
+"loop": true,
+"name": &"player_run",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f8mbv"]
+size = Vector2(48, 84)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12eme"]
+size = Vector2(36, 67)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jbbtj"]
+size = Vector2(34, 72)
+
+[node name="EscenaJuego" type="Node2D"]
+script = ExtResource("1_vrxht")
+
+[node name="Player" type="Area2D" parent="."]
+position = Vector2(500, 300)
+script = ExtResource("1_bepe4")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="Player"]
+sprite_frames = SubResource("SpriteFrames_q1olg")
+animation = &"player_run"
+autoplay = "player_run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(-1, 11)
+shape = SubResource("RectangleShape2D_f8mbv")
+
+[node name="Enemy" parent="." instance=ExtResource("6_6buaf")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+position = Vector2(1, 10.5)
+shape = SubResource("RectangleShape2D_12eme")
+
+[node name="Apple" parent="." instance=ExtResource("10_v5hrf")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Interfaz" parent="CanvasLayer" instance=ExtResource("12_c0bia")]
+offset_left = 15.0
+offset_top = 17.0
+offset_right = -52.0
+offset_bottom = -51.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Apple2" parent="." instance=ExtResource("10_v5hrf")]
+position = Vector2(587, 424)
+
+[node name="Apple3" parent="." instance=ExtResource("10_v5hrf")]
+position = Vector2(497, 114)
+
+[node name="Apple4" parent="." instance=ExtResource("10_v5hrf")]
+position = Vector2(979, 314)
+
+[node name="Apple5" parent="." instance=ExtResource("10_v5hrf")]
+position = Vector2(1351, 506)
+
+[node name="Apple6" parent="." instance=ExtResource("10_v5hrf")]
+position = Vector2(191, 343)
+
+[node name="Enemy2" parent="." instance=ExtResource("6_6buaf")]
+position = Vector2(299, 520)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy2"]
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_jbbtj")
