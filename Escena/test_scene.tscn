@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Menu/Video.cs" id="1_6n4y2"]
 [ext_resource type="Script" path="res://Menu/Audio.cs" id="2_3e4xb"]
-[ext_resource type="FontFile" uid="uid://c1nle1aftt7ag" path="res://Images/PressStart2P-Regular.ttf" id="3_ekah3"]
+[ext_resource type="FontFile" uid="uid://c1nle1aftt7ag" path="res://Images/Otros/PressStart2P-Regular.ttf" id="3_ekah3"]
 [ext_resource type="Script" path="res://Menu/ExitToMenu.cs" id="3_j3vug"]
 
 [node name="MenuOpciones" type="Node2D"]

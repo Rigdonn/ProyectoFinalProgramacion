@@ -13,15 +13,15 @@ public partial class escena_juego : Node2D
 	private PackedScene mainMenu;
 	public override void _Ready()
 	{
-		mainMenu = GD.Load<PackedScene>("res://main_menu.tscn");
+		mainMenu = GD.Load<PackedScene>("res://Menu/main_menu.tscn");
 		player = GetNode<Player>("/root/EscenaJuego/Player");
-		//objeto = GD.Load<PackedScene>("res://objeto_que_cae.tscn");
+		objeto = GD.Load<PackedScene>("res://Objetos/objeto_que_cae.tscn");
 		GD.Randomize();
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 public override void _Process(double delta)
-{
+{	
 	
 	if (Input.IsKeyPressed(Godot.Key.Space))
 	{
@@ -30,22 +30,16 @@ public override void _Process(double delta)
 		AddChild(objetoCae);
 	}
 	if(Input.IsKeyPressed(Godot.Key.Escape)){
-		if(GetTree().Paused == false){
-			GetTree().ChangeSceneToFile("res://escena_juego.tscn");
-			GetTree().Paused = true;
-		}
-		else{
-			GetTree().Paused = false;
-		}
+		GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
 	}
 }
 
 	public void IncrementarPuntos()
 	{
 		puntos += 10;
-		//GD.Print("Puntos " + score);
 		interfaz iu = GetNode<interfaz>("/root/EscenaJuego/CanvasLayer/Interfaz");
 		iu.ActualizarPuntos(puntos);
+		iu.TerminarPartida(puntos);
 
 	}
 

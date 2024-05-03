@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c05qrv1ygxwgo"
-path="res://.godot/imported/apple.png-ff3c3a0d183014961f83c4ca90933224.ctex"
+uid="uid://dq0vgis0elyfj"
+path="res://.godot/imported/zombie_walk1.png-67910f959af777bce824032aba2b906e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/apple.png"
-dest_files=["res://.godot/imported/apple.png-ff3c3a0d183014961f83c4ca90933224.ctex"]
+source_file="res://Images/Enemigos/zombie_walk1.png"
+dest_files=["res://.godot/imported/zombie_walk1.png-67910f959af777bce824032aba2b906e.ctex"]
 
 [params]
 

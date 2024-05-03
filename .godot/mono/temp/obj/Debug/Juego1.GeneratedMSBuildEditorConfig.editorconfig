@@ -1,6 +1,6 @@
 is_global = true
 build_property.GodotDisabledSourceGenerators = 
-build_property.GodotProjectDir = D:\Godot\Juego1\
+build_property.GodotProjectDir = d:\Godot\Juego1\ProyectoFinalProgramacion\
 build_property.GodotProjectDirBase64 = 
 build_property.GodotSourceGenerators = 
 build_property.IsGodotToolsProject = 
@@ -13,4 +13,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Juego1
-build_property.ProjectDir = D:\Godot\Juego1\
+build_property.ProjectDir = d:\Godot\Juego1\ProyectoFinalProgramacion\

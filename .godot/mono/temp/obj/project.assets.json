@@ -93,11 +93,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Godot\\Juego1\\Juego1.csproj",
+      "projectUniqueName": "D:\\Godot\\Juego1\\ProyectoFinalProgramacion\\Juego1.csproj",
       "projectName": "Juego1",
-      "projectPath": "d:\\Godot\\Juego1\\Juego1.csproj",
+      "projectPath": "D:\\Godot\\Juego1\\ProyectoFinalProgramacion\\Juego1.csproj",
       "packagesPath": "C:\\Users\\Calvo\\.nuget\\packages\\",
-      "outputPath": "d:\\Godot\\Juego1\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "D:\\Godot\\Juego1\\ProyectoFinalProgramacion\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Calvo\\AppData\\Roaming\\NuGet\\NuGet.Config",

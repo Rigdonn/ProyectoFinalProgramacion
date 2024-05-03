@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c2trlku0ebcjk"]
 
 [ext_resource type="Script" path="res://Objetos/Apple.cs" id="1_6jdnl"]
-[ext_resource type="Texture2D" uid="uid://c05qrv1ygxwgo" path="res://Images/apple.png" id="2_ariah"]
+[ext_resource type="Texture2D" uid="uid://c05qrv1ygxwgo" path="res://Images/Objetos/apple.png" id="2_ariah"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2hg6b"]
 size = Vector2(42, 46)

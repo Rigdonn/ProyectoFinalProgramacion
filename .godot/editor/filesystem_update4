@@ -1,6 +1,5 @@
 res://Escena/escena_juego.tscn
 res://Escena/interfaz.tscn
-res://Escena/objeto_que_cae.tscn
 res://Menu/main_menu.tscn
 res://Escena/test_scene.tscn
 res://Escena/escena_juego.cs
@@ -10,6 +9,7 @@ res://Menu/Exit.cs
 res://Menu/ExitToMenu.cs
 res://Menu/main_menu.cs
 res://Menu/Options.cs
+res://Menu/Persistence.cs
 res://Menu/Play.cs
 res://Menu/Video.cs
 res://Objetos/Apple.cs

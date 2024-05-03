@@ -12,20 +12,20 @@ public partial class Player : Area2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame. //En cada fotograma del juego
 	public override void _Process(double delta)
 	{
-		if (Input.IsActionPressed("ui_right"))
+		if (Input.IsActionPressed("derecha_d"))
 		{
 			Position += new Vector2((float)(200 * delta), 0);
 			 //el cast a float porque porque delta es un doble, delta(frame rate)
 		}
-		else if (Input.IsActionPressed("ui_left"))
+		else if (Input.IsActionPressed("izquierda_a"))
 		{
 			Position += new Vector2((float)(-200 * delta), 0);
 		}
-		else if (Input.IsActionPressed("ui_up"))
+		else if (Input.IsActionPressed("arriba_w"))
 		{
 			Position += new Vector2(0, (float)(-200 * delta));
 		}
-		else if (Input.IsActionPressed("ui_down"))
+		else if (Input.IsActionPressed("abajo_s"))
 		{
 			Position += new Vector2(0, (float)(200 * delta));
 		}

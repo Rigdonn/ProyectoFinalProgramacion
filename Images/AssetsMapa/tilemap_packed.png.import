@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c34m7n4dlq350"
-path="res://.godot/imported/zombie_walk2.png-288e6c7dab057072dcfb22982cecd2a1.ctex"
+uid="uid://dqw177mes3m0k"
+path="res://.godot/imported/tilemap_packed.png-0fce702abd5acc7649824076ae27a98b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/zombie_walk2.png"
-dest_files=["res://.godot/imported/zombie_walk2.png-288e6c7dab057072dcfb22982cecd2a1.ctex"]
+source_file="res://Images/AssetsMapa/tilemap_packed.png"
+dest_files=["res://.godot/imported/tilemap_packed.png-0fce702abd5acc7649824076ae27a98b.ctex"]
 
 [params]
 

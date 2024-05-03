@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do8hxemg8q414"
-path="res://.godot/imported/zombie_stand.png-5febfedf1d1152e7302df9d77b7d841b.ctex"
+uid="uid://dfb5twe0da6b5"
+path="res://.godot/imported/minecart.png-3ad06c33f002642893f76ecc42e2d301.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/zombie_stand.png"
-dest_files=["res://.godot/imported/zombie_stand.png-5febfedf1d1152e7302df9d77b7d841b.ctex"]
+source_file="res://Images/Objetos/minecart.png"
+dest_files=["res://.godot/imported/minecart.png-3ad06c33f002642893f76ecc42e2d301.ctex"]
 
 [params]
 

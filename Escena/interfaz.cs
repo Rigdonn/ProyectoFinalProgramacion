@@ -17,4 +17,10 @@ public partial class interfaz : Control
 		Label texto = GetNode<Label>("TextoPuntos"); ///root/EscenaJuego/CanvasLayer/Interfaz/"TextoPuntos?
 		texto.Text = "Puntos:" + valor;
 	}
+
+	public void TerminarPartida(int valor){
+		if (valor >= 40){
+			GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
+		}
+	}
 }

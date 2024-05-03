@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfb5twe0da6b5"
-path="res://.godot/imported/minecart.png-5c7a12df3f04d9219322b9fefb31c650.ctex"
+uid="uid://c34m7n4dlq350"
+path="res://.godot/imported/zombie_walk2.png-0acb1fb3e24dac407e8cabce743e2535.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/minecart.png"
-dest_files=["res://.godot/imported/minecart.png-5c7a12df3f04d9219322b9fefb31c650.ctex"]
+source_file="res://Images/Enemigos/zombie_walk2.png"
+dest_files=["res://.godot/imported/zombie_walk2.png-0acb1fb3e24dac407e8cabce743e2535.ctex"]
 
 [params]
 

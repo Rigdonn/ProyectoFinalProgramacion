@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cqmtnklleiylt"]
 
 [ext_resource type="Script" path="res://Escena/objeto_que_cae.cs" id="1_igkmn"]
-[ext_resource type="Texture2D" uid="uid://dfb5twe0da6b5" path="res://Images/minecart.png" id="2_fy23m"]
+[ext_resource type="Texture2D" uid="uid://dfb5twe0da6b5" path="res://Images/Objetos/minecart.png" id="2_fy23m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fpt8r"]
 size = Vector2(55, 65)
