@@ -1,9 +1,16 @@
+res://mainPlayer.tscn
+res://default_tileset.tres
+res://Resources/Player_crouching_cshape.tres
+res://Resources/Player_standing_cshape.tres
 res://Escena/escena_juego.tscn
 res://Escena/interfaz.tscn
 res://Menu/main_menu.tscn
 res://Escena/test_scene.tscn
+res://cajas.tscn
+res://Mapa/tile_map.tscn
 res://Escena/escena_juego.cs
 res://Escena/interfaz.cs
+res://mainPlayer.cs
 res://Menu/Audio.cs
 res://Menu/Exit.cs
 res://Menu/ExitToMenu.cs
@@ -15,3 +22,6 @@ res://Menu/Video.cs
 res://Objetos/Apple.cs
 res://Objetos/Enemy.cs
 res://Objetos/Player.cs
+res://Objetos/mainPlayer.tscn
+res://Objetos/mainPlayer.cs
+res://Images/AssetsMapa/default_tileset.tres

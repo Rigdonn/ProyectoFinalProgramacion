@@ -15,7 +15,7 @@ public partial class Apple : Area2D
 
 	private void _on_area_entered(Area2D otro)
 	{
-		if (otro.Name == "Player")
+		if (otro.Name == "mainPlayer")
 		{
 			GD.Print("Chocado");
 			GetParent().Call("IncrementarPuntos");
@@ -23,4 +23,5 @@ public partial class Apple : Area2D
 		}
 
 	}
+	
 }

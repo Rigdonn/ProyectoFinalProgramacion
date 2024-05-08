@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdqasaaabehct"]
+
+[ext_resource type="TileSet" uid="uid://hf1vq4skhng6" path="res://Images/AssetsMapa/default_tileset.tres" id="1_jc4ub"]
+
+[node name="TileMap" type="TileMap"]
+tile_set = ExtResource("1_jc4ub")
+format = 2
+layer_0/name = "Suelo"
+layer_1/name = "Hierba"
+layer_1/z_index = 1
+layer_1/tile_data = PackedInt32Array()
