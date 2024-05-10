@@ -149,4 +149,15 @@ public partial class mainPlayer : CharacterBody2D
 	public bool EncimaPersonaje(){ //si hay algo encima del personaje -> false
 		return !crouchRaycast1.IsColliding() && !crouchRaycast2.IsColliding();
 	} 
+	
+	private void _on_area_entered(Area2D otro)
+	{
+		if (otro.Name == "mainPlayer")
+		{
+			GD.Print("Chocado");
+			GetParent().Call("IncrementarPuntos");
+			QueueFree();
+		}
+
+	}
 }

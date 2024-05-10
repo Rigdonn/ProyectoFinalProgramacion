@@ -9,7 +9,7 @@ public partial class escena_juego : Node2D
 	// Called when the node enters the scene tree for the first time.
 	private int puntos = 0;
 	private mainPlayer player;
-	private PackedScene objeto;
+	//private PackedScene objeto;
 	private PackedScene mainMenu;
 	public override void _Ready()
 	{
