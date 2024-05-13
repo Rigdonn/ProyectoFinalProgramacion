@@ -20,7 +20,6 @@ public partial class mainPlayer : CharacterBody2D
 	//public float horizontalDirection = Input.GetAxis("izquierda_a", "derecha_d");
 
 
-	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
 	public override void _Ready()
@@ -34,28 +33,21 @@ public partial class mainPlayer : CharacterBody2D
 		crouchRaycast2 = GetNode<RayCast2D>("/root/EscenaJuego/MainPlayer/CrouchingRaycast2");
 	}
 
-	public override void _Process(double delta)
-	{	
-		
-	}
-
 	public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
-
-		// Add the gravity.
+		//gravedad
 		if (!IsOnFloor())
 			velocity.Y += gravity * (float)delta;
 			if (velocity.Y > 1000){
 				velocity.Y = 1000;
 			}
 
-		// Handle Jump.
+		//salto
 		if (Input.IsActionJustPressed("jump"))  // && IsOnFloor() para cuando tenga el suelo
 			velocity.Y = -JumpVelocity; //variable de arriba
 
-		// Get the input direction and handle the movement/deceleration.
-		// As good practice, you should replace UI actions with custom gameplay actions.
+		//movimieto
 		Vector2 direccion = Input.GetVector( "izquierda_a", "derecha_d", "ui_up", "ui_down");
 		if (direccion != Vector2.Zero)
 		{
@@ -86,7 +78,7 @@ public partial class mainPlayer : CharacterBody2D
 				}
 			}
 		}
-		if(personajeStucked && EncimaPersonaje()){ //si no estoy pulsando "S" pero ya no tengo nada encima se levanta automaticamente
+		if(personajeStucked && EncimaPersonaje()){ //si no estoy pulsando "S" pero ya no tengo nada encima pulsar S para levantarse
 			if(!Input.IsActionJustPressed("abajo_s")){
 				Levantarse();
 				personajeStucked = false;

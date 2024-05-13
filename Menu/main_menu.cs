@@ -19,14 +19,14 @@ public partial class main_menu : Control
 	}
 	
 	private void _on_exit_pressed(){ //Para salir del juego desde la pantalla principal
-		GD.Print("Exit");
+		GD.Print("Salir");
 		GetTree().Quit();
 		
 	}
 		private void _on_new_game_pressed() //Para empezar nueva partida
 	{
 		// Replace with function body.
-		GD.Print("Play button");
+		GD.Print("Inicio");
 		GetTree().ChangeSceneToFile("res://Escena/escena_juego.tscn");
 	}
 }
