@@ -143,5 +143,5 @@ libraries = {
 autoplay = "run"
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(-14, 9)
+position = Vector2(-13, 6)
 target_position = Vector2(0, 27)

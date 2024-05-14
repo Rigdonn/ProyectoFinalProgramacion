@@ -5,6 +5,7 @@ public partial class mainPlayer : CharacterBody2D
 {
 	public const float Speed = 300;
 	public const float JumpVelocity = 380;
+	public const int vidas = 1;
 
 	private AnimationPlayer ap;
 	private Sprite2D sprite;
@@ -16,8 +17,6 @@ public partial class mainPlayer : CharacterBody2D
 	public RayCast2D crouchRaycast2;
 	public bool personajeStucked = false;
 	
-
-	//public float horizontalDirection = Input.GetAxis("izquierda_a", "derecha_d");
 
 
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
@@ -44,8 +43,8 @@ public partial class mainPlayer : CharacterBody2D
 			}
 
 		//salto
-		if (Input.IsActionJustPressed("jump"))  // && IsOnFloor() para cuando tenga el suelo
-			velocity.Y = -JumpVelocity; //variable de arriba
+		if (Input.IsActionJustPressed("jump") && IsOnFloor())
+			velocity.Y = -JumpVelocity * (float)1.4;
 
 		//movimieto
 		Vector2 direccion = Input.GetVector( "izquierda_a", "derecha_d", "ui_up", "ui_down");

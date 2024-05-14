@@ -3,11 +3,11 @@ using System;
 
 public partial class Enemigo : CharacterBody2D
 {
-	public const float Speed = -60f;
+	public const float Speed = 60f;
 
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
-	public bool derecha = false;
+	 private bool moviendoseDerecha = false;
 
 	private Sprite2D sprite;
 
@@ -26,11 +26,13 @@ public partial class Enemigo : CharacterBody2D
 			velocity.Y += gravity * (float)delta;
 		}
 		else{
-			velocity.X = -gravity * (float)delta + Speed;
+			velocity.X = moviendoseDerecha ? Speed : -Speed;
 		}
 
-		if(!sueloRaycast1.IsColliding() && IsOnFloor()){
-			velocity.X = gravity * (float)delta;
+		if (!sueloRaycast1.IsColliding()){
+			moviendoseDerecha = !moviendoseDerecha;
+			sprite.FlipH = moviendoseDerecha;
+			
 		}
 
 

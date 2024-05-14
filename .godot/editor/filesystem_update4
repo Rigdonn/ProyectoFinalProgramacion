@@ -3,9 +3,7 @@ res://Images/AssetsMapa/default_tileset.tres
 res://Escena/interfaz.tscn
 res://Menu/main_menu.tscn
 res://Objetos/mainPlayer.tscn
-res://cajas.tscn
 res://Mapa/tile_map.tscn
-res://Objetos/apple.tscn
 res://Objetos/enemigo.tscn
 res://Escena/escena_juego.cs
 res://Escena/interfaz.cs
@@ -17,9 +15,11 @@ res://Menu/Options.cs
 res://Menu/Persistence.cs
 res://Menu/Play.cs
 res://Menu/Video.cs
-res://Objetos/Apple.cs
 res://Objetos/Comida.cs
 res://Objetos/Enemigo.cs
 res://Objetos/Enemy.cs
 res://Objetos/mainPlayer.cs
 res://Objetos/Player.cs
+res://Objetos/comida.tscn
+res://Menu/default_bus_layout.tres
+res://Spawn.cs

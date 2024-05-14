@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcbqkxp284oi4"]
+[gd_scene load_steps=3 format=3 uid="uid://dcbqkxp284oi4"]
 
 [ext_resource type="Script" path="res://Escena/interfaz.cs" id="1_nud7q"]
+[ext_resource type="Texture2D" uid="uid://cdcjfkbi3jwcj" path="res://Images/Objetos/Food_10.png" id="2_3unyi"]
 
 [node name="Interfaz" type="Control"]
 layout_mode = 3
@@ -19,4 +20,8 @@ script = ExtResource("1_nud7q")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-text = "Comida:"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(42, 17)
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("2_3unyi")

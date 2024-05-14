@@ -14,13 +14,14 @@ public partial class interfaz : Control
 	}
 
 	public void ActualizarPuntos(int valor){
-		Label texto = GetNode<Label>("TextoPuntos"); ///root/EscenaJuego/CanvasLayer/Interfaz/"TextoPuntos?
-		texto.Text = "Manzanas:" + valor;
+		Label texto = GetNode<Label>("TextoPuntos"); //root/EscenaJuego/CanvasLayer/Interfaz/TextoPuntos
+		texto.Text = $"{valor}/5";
 	}
 
 	public void TerminarPartida(int valor){
 		if (valor >= 5){
-			GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
+			//GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
+			GetTree().ReloadCurrentScene();
 		}
 	}
 }

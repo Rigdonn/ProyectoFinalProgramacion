@@ -32,7 +32,13 @@ public override void _Process(double delta)
 	if(Input.IsKeyPressed(Godot.Key.Escape)){
 		GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
 	}
+	FinalCaidaAlVacio();
 }
+	public void FinalCaidaAlVacio(){
+		if (player.Position.Y >= 700){
+			GetTree().ReloadCurrentScene();
+		}
+	}
 
 	public void IncrementarPuntos()
 	{
