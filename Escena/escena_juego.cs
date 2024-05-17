@@ -9,13 +9,11 @@ public partial class escena_juego : Node2D
 	// Called when the node enters the scene tree for the first time.
 	private int puntos = 0;
 	private mainPlayer player;
-	//private PackedScene objeto;
 	private PackedScene mainMenu;
 	public override void _Ready()
 	{
 		mainMenu = GD.Load<PackedScene>("res://Menu/main_menu.tscn");
 		player = GetNode<mainPlayer>("/root/EscenaJuego/MainPlayer");
-		//objeto = GD.Load<PackedScene>("res://Objetos/objeto_que_cae.tscn");
 		GD.Randomize();
 	}
 
@@ -25,9 +23,6 @@ public override void _Process(double delta)
 	
 	if (Input.IsKeyPressed(Godot.Key.Space))
 	{
-		//GD.Print("Cayendo");
-		/*var objetoCae = objeto.Instantiate();
-		AddChild(objetoCae);*/
 	}
 	if(Input.IsKeyPressed(Godot.Key.Escape)){
 		GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
@@ -35,7 +30,7 @@ public override void _Process(double delta)
 	FinalCaidaAlVacio();
 }
 	public void FinalCaidaAlVacio(){
-		if (player.Position.Y >= 700){
+		if (player.Position.Y >= 800){
 			GetTree().ReloadCurrentScene();
 		}
 	}

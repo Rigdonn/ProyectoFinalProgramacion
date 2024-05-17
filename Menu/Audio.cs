@@ -3,7 +3,7 @@ using System;
 
 public partial class Audio : TabBar
 {
-	// Called when the node enters the scene tree for the first time.
+	// Esta clase controla el audio del juego desde la pestaña sonido en opciones
 	public override void _Ready()
 	{
 	}

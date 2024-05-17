@@ -15,11 +15,11 @@ public partial class interfaz : Control
 
 	public void ActualizarPuntos(int valor){
 		Label texto = GetNode<Label>("TextoPuntos"); //root/EscenaJuego/CanvasLayer/Interfaz/TextoPuntos
-		texto.Text = $"{valor}/5";
+		texto.Text = $"{valor}/26";
 	}
 
 	public void TerminarPartida(int valor){
-		if (valor >= 5){
+		if (valor >= 26){
 			//GetTree().ChangeSceneToFile("res://Menu/main_menu.tscn");
 			GetTree().ReloadCurrentScene();
 		}

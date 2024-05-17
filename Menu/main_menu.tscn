@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://brjf360hwdb3y"]
+[gd_scene load_steps=10 format=3 uid="uid://brjf360hwdb3y"]
 
 [ext_resource type="Script" path="res://Menu/main_menu.cs" id="1_qfphw"]
 [ext_resource type="FontFile" uid="uid://c1nle1aftt7ag" path="res://Images/Otros/PressStart2P-Regular.ttf" id="1_v3mrh"]
 [ext_resource type="Script" path="res://Menu/Options.cs" id="3_60xdf"]
 [ext_resource type="Script" path="res://Menu/Play.cs" id="3_ov381"]
 [ext_resource type="Script" path="res://Menu/Exit.cs" id="4_vttry"]
+[ext_resource type="Script" path="res://Menu/ComoJugar.cs" id="6_f8i75"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mfjcj"]
 bg_color = Color(0, 0, 0, 0.392157)
@@ -110,8 +111,30 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_mfjcj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ngs8n")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ti86n")
-text = "Options"
+text = "Opciones"
 script = ExtResource("3_60xdf")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_right = 50
+
+[node name="ComoJugar" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer/VBoxContainer2/MarginContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_v3mrh")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mfjcj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ngs8n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ti86n")
+text = "Como Jugar"
+script = ExtResource("6_f8i75")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -132,9 +155,10 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_mfjcj")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ngs8n")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ti86n")
-text = "Exit"
+text = "Salir"
 script = ExtResource("4_vttry")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/MarginContainer/New Game" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer/MarginContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer/VBoxContainer2/MarginContainer/ComoJugar" to="." method="_on_como_jugar_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/VBoxContainer/VBoxContainer/MarginContainer/Exit" to="." method="_on_exit_pressed"]

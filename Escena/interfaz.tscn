@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dcbqkxp284oi4"]
+[gd_scene load_steps=4 format=3 uid="uid://dcbqkxp284oi4"]
 
 [ext_resource type="Script" path="res://Escena/interfaz.cs" id="1_nud7q"]
 [ext_resource type="Texture2D" uid="uid://cdcjfkbi3jwcj" path="res://Images/Objetos/Food_10.png" id="2_3unyi"]
+[ext_resource type="FontFile" uid="uid://c1nle1aftt7ag" path="res://Images/Otros/PressStart2P-Regular.ttf" id="3_o27bg"]
 
 [node name="Interfaz" type="Control"]
 layout_mode = 3
@@ -25,3 +26,14 @@ offset_bottom = 23.0
 position = Vector2(42, 17)
 scale = Vector2(1.7, 1.7)
 texture = ExtResource("2_3unyi")
+
+[node name="TextoTutorial" type="Label" parent="."]
+layout_mode = 0
+offset_left = 441.0
+offset_top = 277.0
+offset_right = 665.0
+offset_bottom = 331.0
+theme_override_fonts/font = ExtResource("3_o27bg")
+text = "A Y D moverse
+Espacio saltar
+S agacharse"

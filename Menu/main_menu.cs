@@ -1,7 +1,9 @@
 using Godot;
 using System;
+using System.IO;
 public partial class main_menu : Control
 {
+	public StreamReader fichero;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -14,7 +16,7 @@ public partial class main_menu : Control
 
 	private void _on_options_pressed(){ //Botón de opciones
 		GD.Print("Botón de Opciones");
-		GetTree().ChangeSceneToFile("res://Escena/test_scene.tscn"); //test_escene pero la renombré a MenuOpciones
+		GetTree().ChangeSceneToFile("res://Escena/MenuOpciones.tscn"); //test_escene pero la renombré a MenuOpciones
 
 	}
 	
@@ -23,10 +25,34 @@ public partial class main_menu : Control
 		GetTree().Quit();
 		
 	}
-		private void _on_new_game_pressed() //Para empezar nueva partida
+	private void _on_new_game_pressed() //Para empezar nueva partida
 	{
-		// Replace with function body.
 		GD.Print("Inicio");
 		GetTree().ChangeSceneToFile("res://Escena/escena_juego.tscn");
+	}
+	private void _on_como_jugar_pressed() //Para cargar el fichero de como Jugar
+	{
+        // Para cargar el fichero de como Jugar
+        GD.Print("Cargando instrucciones de 'Cómo Jugar'");
+
+        string filePath = "res://Images/Otros/ComoJugar.txt";
+        StreamReader miFichero = null;
+        
+        try
+        {
+            miFichero = new StreamReader(filePath);
+            string contenido = miFichero.ReadToEnd();
+            GD.Print(contenido); // Imprimir el contenido en la consola
+            // Aquí puedes actualizar un nodo de texto, una ventana de diálogo, etc.
+        }
+        catch (Exception ex)
+        {
+            GD.PrintErr($"Error al cargar el fichero: {ex.Message}");
+        }
+        finally
+        {
+            if (miFichero != null)
+                miFichero.Close();
+        }
 	}
 }

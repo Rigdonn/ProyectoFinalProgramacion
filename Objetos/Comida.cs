@@ -5,12 +5,13 @@ using System.Collections.Generic;
 public partial class Comida : Area2D
 {
     private List<AudioStreamPlayer2D> sonidosComer = new List<AudioStreamPlayer2D>();
+    private const int numComidas = 26;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        // Agregar los AudioStreamPlayer2D al List
-        for (int i = 1; i <= 5; i++)
+        // Agregar los AudioStreamPlayer2D a la Lista
+        for (int i = 1; i <= numComidas; i++)
         {
             AudioStreamPlayer2D sonido = GetNode<AudioStreamPlayer2D>($"/root/EscenaJuego/Comida{i}/AudioStreamPlayer2D");
             sonidosComer.Add(sonido);
@@ -29,7 +30,7 @@ public partial class Comida : Area2D
             GD.Print("Chocado");
             GetParent().Call("IncrementarPuntos");
 			QueueFree();
-            // Reproducir cada sonido en el List
+            // Reproducir cada sonido en de la lista
             foreach (AudioStreamPlayer2D sonido in sonidosComer)
             {
 				if (sonido != null){

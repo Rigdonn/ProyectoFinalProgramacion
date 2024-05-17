@@ -29,15 +29,15 @@ public partial class Enemigo : CharacterBody2D
 			velocity.X = moviendoseDerecha ? Speed : -Speed;
 		}
 
-		if (!sueloRaycast1.IsColliding()){
-			moviendoseDerecha = !moviendoseDerecha;
-			sprite.FlipH = moviendoseDerecha;
-			
-		}
-
 
 
 		Velocity = velocity;
 		MoveAndSlide();
+	}
+	private void _on_hit_box_body_entered(CharacterBody2D otro)
+	{
+		if (otro.Name == "MainPlayer"){
+			GetTree().ReloadCurrentScene();
+		}
 	}
 }

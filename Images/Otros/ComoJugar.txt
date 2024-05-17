@@ -1,0 +1,4 @@
+En QuestExplorer, te convertirás en Sir Aldric, un caballero atrapado en un ciclo de resurrección tras descubrir la "Gema del Destino". Cada decisión que tomes afectará su destino y el del reino de Eldoria. Explora un mundo lleno de desafíos, enfrenta enemigos temibles y resuelve enigmas antiguos. Tu objetivo es descubrir y experimentar todos los posibles finales para romper la maldición. ¿Podrás desentrañar todos los secretos y liberar al reino de su destino?
+A Y D Moverse
+S Agacharse
+Espacio Saltar

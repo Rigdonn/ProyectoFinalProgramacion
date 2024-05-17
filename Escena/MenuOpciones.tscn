@@ -39,12 +39,12 @@ layout_mode = 2
 
 [node name="FullScreen" type="Label" parent="UI/Settings/Video/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "FullScreen
+text = "Pantalla Completa
 "
 
 [node name="Borderless" type="Label" parent="UI/Settings/Video/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Borderless"
+text = "Ventana Sin Bordes"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="UI/Settings/Video/HBoxContainer"]
 layout_mode = 2
@@ -85,7 +85,7 @@ text = "Master"
 
 [node name="Music" type="Label" parent="UI/Settings/Audio/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-text = "Music"
+text = "Musica"
 
 [node name="SFX" type="Label" parent="UI/Settings/Audio/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -136,7 +136,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_ekah3")
 theme_override_font_sizes/font_size = 50
-text = "Back to Menu"
+text = "Volver Al Menú"
 script = ExtResource("3_j3vug")
 
 [connection signal="toggled" from="UI/Settings/Video/HBoxContainer/VBoxContainer2/FullScreen" to="UI/Settings/Video" method="_on_full_screen_toggled"]
