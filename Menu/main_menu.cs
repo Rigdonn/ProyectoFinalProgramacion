@@ -42,8 +42,8 @@ public partial class main_menu : Control
         {
             miFichero = new StreamReader(filePath);
             string contenido = miFichero.ReadToEnd();
-            GD.Print(contenido); // Imprimir el contenido en la consola
-            // Aquí puedes actualizar un nodo de texto, una ventana de diálogo, etc.
+            GD.Print(contenido); // Imprimir el contenido
+            
         }
         catch (Exception ex)
         {

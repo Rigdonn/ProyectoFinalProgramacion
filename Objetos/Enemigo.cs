@@ -3,7 +3,7 @@ using System;
 
 public partial class Enemigo : CharacterBody2D
 {
-	public const float Speed = 60f;
+	public float Speed = 60f;
 
 	public float gravity = ProjectSettings.GetSetting("physics/2d/default_gravity").AsSingle();
 
